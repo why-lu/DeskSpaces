@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>DeskSpaces</AssemblyName>
+    <RootNamespace>DeskSpaces</RootNamespace>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultPageItems>false</EnableDefaultPageItems>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <Version>0.1.0</Version>
+    <Description>Windows 原生虚拟桌面的独立图标工作区</Description>
+    <StartupObject>DeskSpaces.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="GlobalUsings.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="App.xaml.cs" />
+    <Compile Include="LayoutModels.cs" />
+    <Compile Include="ClipboardEntry.cs" />
+    <Compile Include="NativeDesktopWatchdog.cs" />
+    <Compile Include="NativeDesktop.cs" />
+    <Compile Include="NativeDesktopSwitch.cs" />
+    <Compile Include="DesktopCanvas.xaml.cs" />
+    <Compile Include="SwitcherWindow.xaml.cs" />
+    <Compile Include="SettingsWindow.xaml.cs" />
+    <ApplicationDefinition Include="App.xaml" />
+    <Page Include="DesktopCanvas.xaml" />
+    <Page Include="SwitcherWindow.xaml" />
+    <Page Include="SettingsWindow.xaml" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,20 @@
+<Window x:Class="DeskSpaces.DesktopCanvas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DeskSpaces 预览" Width="1200" Height="760" MinWidth="640" MinHeight="420"
+        Background="#18344A62" AllowsTransparency="True" WindowStyle="None"
+        ResizeMode="CanResizeWithGrip" ShowInTaskbar="False" Topmost="False"
+        KeyDown="OnKeyDown">
+    <Grid x:Name="RootGrid">
+        <Border x:Name="PreviewBackdrop" Background="#F020303F" CornerRadius="12" Margin="8" />
+        <Canvas x:Name="IconCanvas" Margin="8" ClipToBounds="True" MouseLeftButtonDown="OnCanvasMouseDown" />
+        <Border VerticalAlignment="Top" HorizontalAlignment="Left" Margin="24" Padding="12,7" Background="#D9141C27" CornerRadius="6">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="DesktopLabel" Text="当前桌面" Foreground="White" FontWeight="SemiBold" />
+                <TextBlock Text=" · 预览模式，不修改原文件" Foreground="#C7D0DB" Margin="8,0,0,0" />
+            </StackPanel>
+        </Border>
+        <TextBlock VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="24,0,24,20" Foreground="#E5EAF0"
+                   Text="拖动图标保存位置 · 双击打开 · Ctrl+C / Ctrl+V 跨桌面复制入口 · Delete 仅移除入口" />
+    </Grid>
+</Window>

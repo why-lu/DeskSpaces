@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild>false</ContinuousIntegrationBuild>
+    <RestorePackagesPath>$(MSBuildThisFileDirectory).packages\</RestorePackagesPath>
+    <Product>DeskSpaces</Product>
+    <Company>DeskSpaces contributors</Company>
+    <Copyright>Copyright (c) 2026 DeskSpaces contributors</Copyright>
+  </PropertyGroup>
+</Project>
